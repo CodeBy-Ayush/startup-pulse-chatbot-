@@ -3,8 +3,6 @@
 Welcome to **Startup Pulse**, your personalized AI assistant for everything **startup, tech, and innovation**!  
 Get the **latest startup news**, **ask questions using your voice**, and **enjoy a clean, chat-based interface** – all in one place.
 
-![Startup Pulse Banner](banner.png) <!-- Optional: Add a banner image -->
-
 ---
 
 ## ✨ Features
@@ -36,13 +34,10 @@ Get the **latest startup news**, **ask questions using your voice**, and **enjoy
 ---
 
 ## 📸 Screenshots
+> ![Dark Mode Preview]
 
-> *Add screenshots here once available*  
-> Example:
-> ![Voice Input Screenshot](screenshot1.png)
-> ![Dark Mode Preview](screenshot2.png)
+---![chatbot](https://github.com/user-attachments/assets/05623536-f858-42a4-8dfc-04347bed92cb)
 
----
 
 ## 💡 How to Use
 
