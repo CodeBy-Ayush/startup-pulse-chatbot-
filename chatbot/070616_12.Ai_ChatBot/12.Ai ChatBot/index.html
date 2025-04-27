@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StartupPulse - Interactive News Bot</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Make sure you have startup-bot.png and user.png images in the same folder -->
+    <!-- Or replace the src attributes below and in the script.js file with correct paths/URLs -->
+</head>
+
+<body class="theme-blue">
+    <div class="background-animation">
+        <div class="bubbles"></div>
+    </div>
+
+    <div class="app-container">
+        <header class="chat-header">
+            <div class="logo">
+                <img src="bot.jpg" alt="StartupPulse Logo" class="logo-img">
+                <h1>StartupPulse</h1>
+            </div>
+            <div class="controls">
+                <button id="clear-history" class="control-btn" title="Clear History">
+                    <i class="fas fa-trash-alt"></i>
+                </button>
+                <button id="voice-btn" class="control-btn" title="Voice Command">
+                    <i class="fas fa-microphone"></i>
+                </button>
+                <div class="theme-selector">
+                    <button id="theme-toggle" class="control-btn" title="Change Theme">
+                        <i class="fas fa-palette"></i>
+                    </button>
+                    <div class="theme-options">
+                        <div class="theme-option blue" data-theme="blue"></div>
+                        <div class="theme-option purple" data-theme="purple"></div>
+                        <div class="theme-option dark" data-theme="dark"></div>
+                        <div class="theme-option light" data-theme="light"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h3>Chat History</h3>
+                <button id="collapse-sidebar" class="sidebar-toggle">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+            </div>
+            <div class="history-container">
+                <!-- Chat history will be populated here -->
+            </div>
+            <div class="sidebar-footer">
+                <div class="saved-queries">
+                    <h4>Suggested Queries</h4>
+                    <div class="query-tag">Latest Tech Startups</div>
+                    <div class="query-tag">AI Companies</div>
+                    <div class="query-tag">Fintech News</div>
+                    <div class="query-tag">Startup Funding</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="chat-container"></div>
+
+            <div class="prompt-area">
+                <button id="expand-sidebar" class="sidebar-toggle hide">
+                    <i class="fas fa-history"></i>
+                </button>
+                <input type="text" id="prompt" placeholder="Ask about startups...">
+                <button id="submit">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="voice-indicator">
+            <div class="voice-waves">
+                <span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <p>Listening...</p>
+            <div class="confidence-meter">
+                <div class="confidence-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="notification-container">
+        <!-- Notifications will appear here -->
+    </div>
+
+    <div class="modal" id="welcome-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Welcome to StartupPulse!</h2>
+                <button class="close-modal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <img src="bot.jpg" alt="StartupPulse Logo" class="welcome-logo">
+                <p>Your intelligent startup news assistant is ready to help you stay updated with the latest in the startup world.</p>
+                <div class="features">
+                    <div class="feature">
+                        <i class="fas fa-comments"></i>
+                        <h3>Chat History</h3>
+                        <p>Your conversations are saved for future reference</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-microphone-alt"></i>
+                        <h3>Voice Commands</h3>
+                        <p>Speak to search for startup news</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-palette"></i>
+                        <h3>Custom Themes</h3>
+                        <p>Choose your preferred color scheme</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="get-started" class="primary-btn">Get Started</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
