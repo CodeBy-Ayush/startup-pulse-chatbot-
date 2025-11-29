@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-            // DOM Element Selection
+            // DOM Element Selections
             const promptInput = document.querySelector("#prompt");
             const submitBtn = document.querySelector("#submit");
             const chatContainer = document.querySelector(".chat-container");
@@ -21,8 +21,8 @@ document.addEventListener("DOMContentLoaded", () => {
             const confidenceBar = voiceIndicator.querySelector('.confidence-bar');
 
             // --- Configuration ---
-            // !!! IMPORTANT: REPLACE "YOUR_NEWS_API_KEY" WITH YOUR ACTUAL KEY !!!
-            const NEWS_API_KEY = "06c796bb31a446dd9b30f395fc222c6c"; // <<<=== GET YOUR KEY FROM newsapi.org AND PUT IT HERE
+            // !!! IMPORTANT: REPLACE "YOUR_NEWS_API_KEY" WITH YOUR ACTUAL KEYs!!!
+            const NEWS_API_KEY = "06c796bb31a446dd9b30f395fc222c6c"; // <<<=== GET YOUR KEYs FROM newsapi.org AND PUT IT HERE
             // !!! If NEWS_API_KEY is not set correctly, fetching will fail !!!
 
             const NEWS_API_URL_BASE = `https://newsapi.org/v2/everything`;
@@ -600,4 +600,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // --- Start the Application ---
     init();
+
 });
