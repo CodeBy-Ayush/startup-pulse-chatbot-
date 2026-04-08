@@ -3,7 +3,7 @@
 Welcome to **Startup Pulse**, your personalized AI assistant for everything **startup, tech, and innovation**!  
 Get the **latest startup news**, **ask questions using your voice**, and **enjoy a clean, chat-based interface** – all in one place.
 
----
+----
 
 ## ✨ Features
 
