@@ -5,7 +5,7 @@ Get the **latest startup news**, **ask questions using your voice**, and **enjoy
 
 ----
 
-## ✨ Features
+# ✨ Features
 
 - 🎙️ **Voice-Enabled Queries**  
   Ask about startup trends and news hands-free using Web Speech API.
